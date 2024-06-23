@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Resume - Thiago Braga</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add your CSS styles here */
+    body.A4 {
+      width: 210mm;
+      height: 297mm;
+      margin: 0 auto;
+      padding: 20mm;
+    }
+    .sheet {
+      display: flex;
+      flex-direction: column;
+    }
+    .btn-print {
+      margin-bottom: 10px;
+    }
+    .resume__section-title {
+      display: flex;
+      align-items: center;
+    }
+    .resume__section-title i {
+      margin-right: 5px;
+    }
+    .resume__content {
+      margin-bottom: 15px;
+    }
+    .resume__columns {
+      display: flex;
+    }
+    .resume__main, .resume__side {
+      width: 50%;
+    }
+    .extra-details__progress {
+      background-color: #ccc;
+      height: 10px;
+    }
+  </style>
+  <script>
+    function handlePrint() {
+      window.print();
+    }
+  </script>
+</head>
+<body class="A4">
+  <div class="sheet">
+    <button class="btn btn-print btn-sm btn-light" onClick="handlePrint()">
+      <i class="fa fa-print"></i> Print
+    </button>
+    <div class="two-column resume">
+      <section class="resume__section resume__header">
+        <div class="resume__content">
+          <h1>Lim Yu Ean</h1>
+          <div class="info-item">
+            <span class="info-label"><i class="fa fa-location-arrow"></i></span>
+            <span class="info-text">3105, Tingkat Selamat 10, Kampung Selamat, 13300 Tasek Gelugor, Penang</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label"><i class="fa fa-envelope"></i></span>
+            <span class="info-text">progary789@gmail.com</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label"><i class="fa fa-phone"></i></span>
+            <span class="info-text">+60195528035</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="resume__columns">
+        <div class="resume__main">
+          <section class="resume__section resume__summary">
+            <div class="resume__content">
+              <div class="resume__section-title">
+                <i class="fa fa-pencil-square-o"></i>
+                <h2>Professional Summary</h2>
+              </div>
+              <div class="other">
+                <div class="other-info">
+                  <p>Computer Science student eager to secure a Software Engineer position where I can leverage my knowledge and passion for front-end and back-end development.</p>
+                  <p>Keen on contributing to dynamic technical teams, I am committed to accelerating my professional growth and applying my skills to produce high-quality software solutions.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="resume__section resume__experience">
+            <div class="resume__content">
+              <div class="resume__section-title">
+                <i class="fa fa-briefcase"></i>
+                <h2>Employment History</h2>
+              </div>
+              <div class="xp-item">
+                <div class="xp-job">
+                  R&D Software Engineer Intern <span>@ Keysight Penang</span>
+                  <br>
+                  <small>Bayan Lepas, Penang</small>
+                </div>
+                <div class="xp-date">Nov. 2023 – Feb. 2024</div>
+                <div class="xp-detail">
+                  <ul>
+                    <li>Develop a robust name matching system to reconcile discrepancies in company names across datasets</li>
+                    <li>Develop a high accuracy name matching algorithm</li>
+                    <li>Create a Webpage and FlaskAPI to test the system</li>
+                    <li>Increase the accuracy of name matching system by 50%</li>
+                    <li>Develop an object detection system</li>
+                    <li>Train, validate and test 5 models</li>
+                    <li>Recommend and implement performance improvements</li>
+                    <li>Increase the accuracy of each model by at least 20%</li>
+                  </ul>
+                </div>
+              </div>
+          </section>
+
+          <section class="resume__section resume__education">
+            <div class="resume__content">
+              <div class="resume__section-title">
+                <i class="fa fa-briefcase"></i>
+                <h2>Education History</h2>
+              </div>
+              <div class="edu-item">
+                <div class="edu-job">
+                  Bachelor of Computer Science in Data Science <span>@ Monash University Malaysia</span>
+                  <br>
+                  <small>Subang Jaya, Selangor</small>
+                </div>
+                <div class="edu-date">Feb. 2022 – Nov. 2024</div>
+                <div class="edu-detail">
+                  <ul>
+                    <li>CGPA: 3.959</li>
+                    <li>WAM: 86.375</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="edu-item">
+                <div class="edu-job">
+                    Monash University Foundation Year <span>@ Sunway College</span>
+                  <br>
+                  <small>Subang Jaya, Selangor</small>
+                </div>
+                <div class="edu-date">Jan. 2021 – Nov. 2021</div>
+                <div class="edu-detail">
+                  <ul>
+                    <li>WAM: 94.625</li>
+                    <li>Award of Excellence for Mathematics, Score: 100/100</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="edu-item">
+                <div class="edu-job">
+                    High School <span>@ SMJK Chung Ling Butterworth </span>
+                  <br>
+                  <small>Subang Jaya, Selangor</small>
+                </div>
+                <div class="edu-date">Jan. 2015 – Nov. 2019</div>
+                <div class="edu-detail">
+                  <ul>
+                    <li>SPM: 10A</li>
+                  </ul>
+                </div>
+              </div>
+          </section>
+        </div>
+
+        <div class="resume__side">
+          <section class="resume__section resume__skills">
+            <div class="resume__content">
+              <div class="resume__section-title">
+                <i class="fa fa-align-center"></i>
+                <h2>Skills</h2>
+              </div>
+              <div class="resume__text">
+                <div class="extra">
+                  <div class="extra-info">Java
+                    <br><small>OOP · Design Pattern</small>
+                  </div>
+                  <div class="extra-details">
+                    <div class="extra-details__progress" style="width:70%"></div>
+                  </div>
+                </div>
+                <div class="extra">
+                    <div class="extra-info">Python
+                    </div>
+                    <div class="extra-details">
+                      <div class="extra-details__progress" style="width:90%"></div>
+                    </div>
+                  </div>
+                <div class="extra">
+                    <div class="extra-info">Databases
+                      <br><small>OracleSQL · MongoDB</small>
+                    </div>
+                    <div class="extra-details">
+                      <div class="extra-details__progress" style="width:60%"></div>
+                    </div>
+                  </div>
+                <div class="extra">
+                  <div class="extra-info">JavaScript
+                  </div>
+                  <div class="extra-details">
+                    <div class="extra-details__progress" style="width:30%"></div>
+                  </div>
+                </div>
+                <div class="extra">
+                  <div class="extra-info">HTML
+                    <br><small>HTML5 · Markdown</small>
+                  </div>
+                  <div class="extra-details">
+                    <div class="extra-details__progress" style="width:30%"></div>
+                  </div>
+                </div>
+                <div class="extra">
+                  <div class="extra-info">CSS
+                  </div>
+                  <div class="extra-details">
+                    <div class="extra-details__progress" style="width:30%"></div>
+                  </div>
+                </div>
+                <div class="extra">
+                  <div class="extra-info">DevOps
+                    <br><small>Docker</small>
+                  </div>
+                  <div class="extra-details">
+                    <div class="extra-details__progress" style="width:30%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="resume__section resume__languages">
+            <div class="resume__content">
+              <div class="resume__section-title">
+                <i class="fa fa-globe"></i>
+                <h2>Languages</h2>
+              </div>
+              <div class="extra">
+                <div class="extra-info">Chinese <small>(native)</small></div>
+                <div class="extra-details">
+                  <div class="extra-details__progress" style="width:100%"></div>
+                </div>
+              </div>
+              <div class="extra">
+                <div class="extra-info">English <small></small></div>
+                <div class="extra-details">
+                  <div class="extra-details__progress" style="width:90%"></div>
+                </div>
+              </div>
+              <div class="extra">
+                <div class="extra-info">Malay <small></small></div>
+                <div class="extra-details">
+                  <div class="extra-details__progress" style="width:80%"></div>
+                </div>
+              </div>
+            </div>
+            </section>
