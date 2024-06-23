@@ -12,14 +12,32 @@
       width: 210mm;
       height: 297mm;
       margin: 0 auto;
-      padding: 20mm;
+      padding: 2mm;
     }
     .sheet {
       display: flex;
       flex-direction: column;
+      margin-top: 0;
     }
     .btn-print {
       margin-bottom: 10px;
+    }
+    .resume__header {
+    display: flex;
+    align-items: center;
+    
+    }
+    .resume__photo {
+    margin-right: 20px;
+    }
+    .resume__photo img {
+    border-radius: 50%;
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    object-fit: cover;
+    }
+    .info-item {
+    margin-bottom: 10px;
     }
     .resume__section-title {
       display: flex;
@@ -55,6 +73,10 @@
     </button>
     <div class="two-column resume">
       <section class="resume__section resume__header">
+        <div class="resume__photo">
+            <img src="Graduate Pic 2.png" alt="Your Photo">
+        </div>
+
         <div class="resume__content">
           <h1>Lim Yu Ean</h1>
           <div class="info-item">
